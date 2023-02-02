@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./built",
+    "allowJs": true,
+    "target": "es6",
+    "baseUrl": ".",
+    "paths": {
+      "chromagic/*": ["./src/*"]
+    },
+    "downlevelIteration": true,
+    "noImplicitThis": true
+  },
+  "include": ["./src/**/*"]
+}

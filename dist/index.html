@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>XR-Snake</title>
+    <script src="main.js"></script>
+  </head>
+  <body style="background-color: #000">
+    <a-scene>
+      <a-entity id="game" visible="false" position="0 1 -0.5">
+        <a-plane
+          width="0.2"
+          height="0.05"
+          position="0 0.17 -0.01"
+          color="#111"
+        ></a-plane>
+        <a-entity score-board position="0 0.17 0.01"></a-entity>
+        <a-entity id="game-dynamic" scale="0.01 0.01 0.01">
+          <!-- Programmatically add game elements here.  -->
+        </a-entity>
+      </a-entity>
+      <a-entity id="menu" position="0 1 -0.5">
+        <a-plane
+          width="0.4"
+          height="0.2"
+          position="0 0 -0.01"
+          color="#222"
+        ></a-plane>
+        <a-entity
+          score-board="text:SnakeXR\n Press A to Play\nLast Score: "
+        ></a-entity>
+      </a-entity>
+      <a-entity
+        camera="active: true"
+        position="0 1.6 0"
+        look-controls
+      ></a-entity>
+      <a-entity
+        oculus-touch-controls="hand:right"
+        touch-controls="target:#snake"
+      ></a-entity>
+    </a-scene>
+  </body>
+</html>

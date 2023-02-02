@@ -1,0 +1,10 @@
+import "aframe";
+import "./utils/aframe-typescript-utils";
+import "./apple";
+import "./board-reposition";
+import "./game-state";
+import "./global-state";
+import "./keyboard-controls";
+import "./score-board";
+import "./snake";
+import "./touch-controls";
